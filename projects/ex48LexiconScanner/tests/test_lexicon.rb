@@ -62,5 +62,11 @@ class TestLexicon < Test::Unit::TestCase
            ['direction', 'south'],
            ['direction', 'east']], result)
   end
+  
+  def test_long_sentence()
+    result = Lexicon.scan("open the door and smack the bear in the nose")
+    expected = [["error", "open"], ["stop", "the"], ["noun", "door"], ["error", "and"], ["error", "smack"], ["stop", "the"], ["noun", "bear"], ["stop", "in"], ["stop", "the"], ["error", "nose"]]
+    assert_equal(expected, result)
+  end
 
 end
