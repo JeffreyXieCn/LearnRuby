@@ -1,0 +1,106 @@
+RUBYGEMS VERSION: 2.6.13
+RUBY VERSION: 2.3.3 (2016-11-21 patchlevel 222) [i386-mingw32]
+INSTALLATION DIRECTORY: D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0
+USER INSTALLATION DIRECTORY: C:/Users/xwy52/.gem/ruby/2.3.0
+RUBY EXECUTABLE: D:/Bitnami/rubystack-2.3.4-6/ruby/bin/ruby.exe
+EXECUTABLE DIRECTORY: D:/Bitnami/rubystack-2.3.4-6/ruby/bin
+SPEC CACHE DIRECTORY: C:/Users/xwy52/.gem/specs
+SYSTEM CONFIGURATION DIRECTORY: C:/ProgramData
+RUBYGEMS PLATFORMS:
+  ruby
+  x86-mingw32
+GEM PATHS:
+   D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0
+   C:/Users/xwy52/.gem/ruby/2.3.0
+GEM CONFIGURATION:
+   :update_sources => true
+   :verbose => true
+   :backtrace => false
+   :bulk_threshold => 1000
+REMOTE SOURCES:
+   https://rubygems.org/
+SHELL PATH:
+   D:\Bitnami\rubystack-2.3.4-6\ruby\bin
+   C:\Program Files (x86)\Intel\iCLS Client\
+   C:\Program Files\Intel\iCLS Client\
+   C:\WINDOWS\system32
+   C:\WINDOWS
+   C:\WINDOWS\System32\Wbem
+   C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+   C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+   C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+   C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+   C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+   C:\Program Files\Intel\WiFi\bin\
+   C:\Program Files\Common Files\Intel\WirelessCommon\
+   D:\Ruby24-x64\bin
+   C:\Users\xwy52\AppData\Local\Microsoft\WindowsApps
+----------------------
+IDE: RubyMine 2017.3.2, build #RM-173.4301.17
+OS: Windows 10 10.0[amd64]
+Java: 1.8.0_152-release-1024-b11
+RubyMine SDK Environment:
+Sdk: ruby-2.3.3-p222
+Sdk Version: ver.2.3.3p0
+Ruby Interpreter: D:/Bitnami/rubystack-2.3.4-6/ruby/bin/ruby.exe
+RVM Sdk: no
+Sdk Language Level: 2.3
+Sdk Load Path:
+     D:/Program Files/JetBrains/Toolbox/apps/RubyMine/ch-0/173.4301.17/rubystubs23
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/site_ruby/2.3.0
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/site_ruby/2.3.0/i386-msvcrt
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/site_ruby
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/vendor_ruby/2.3.0
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/vendor_ruby/2.3.0/i386-msvcrt
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/vendor_ruby
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/2.3.0
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/2.3.0/i386-mingw32
+Sdk Gem paths:
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems
+     C:/Users/xwy52/.gem/ruby/2.3.0/gems
+     D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/bundler/gems
+     C:/Users/xwy52/.gem/ruby/2.3.0/bundler/gems
+Gems used for 'LearnRuby':
+     test-unit (3.1.5)
+         D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/test-unit-3.1.5
+     power_assert (0.2.6)
+         D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/power_assert-0.2.6
+     rack (2.0.3)
+         D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/rack-2.0.3
+     rake (12.0.0)
+         D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/rake-12.0.0
+     rack-test (0.6.3)
+         D:/Bitnami/rubystack-2.3.4-6/ruby/lib/ruby/gems/2.3.0/gems/rack-test-0.6.3
+
+=====Settings Summary====
+=====PERFORMANCE SUMMARY=====
+Filesystem Info:
+File system is case sensitive: false
+Are there symlinks: false
+Number of files: 184
+
+System Info:
+Number of CPU: 4
+Used memory: 269Mb
+Free memory: 88Mb
+Total memory: 357Mb
+Maximum available memory: 725Mb
+Displays:
+Display 0: 1920x1200; scale: 1.00
+Display 1: 1920x1200; scale: 1.00
+
+Project Info:
+Number of opened files: 3
+File size (in lines): 35
+File size in characters: 511
+Last action: _Undo Typing
+Number of injection: 0
+
+IDE Info:
+Custom plugins: [Ideolog (173.0.6.0)]
+Disabled plugins:[]
+Build version: RubyMine 2017.3.2 Build #RM-173.4301.17 January 11, 2018
+Java version: 1.8.0_152-release-1024-b11amd64
+Operating System: Windows 10 (10.0, amd64)
+JVM version: OpenJDK 64-Bit Server VM JetBrains s.r.o
