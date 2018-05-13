@@ -34,3 +34,21 @@ print 'A randomly generated domain: ', ('a'..'z').to_a.shuffle[0..7].join
 puts
 dupArr = [1, 1, 2, 2, 3, 3, 4]
 p dupArr.uniq
+
+hash2 = {two: "2", one: "1", three: "3"}
+hash3 = {one: "1", three: "3", two: "2"}
+p hash3.equal? hash2 #false
+p hash3 == hash2 #true
+
+p hash3
+puts hash3.to_s
+
+p ('a'..'z').step(2).to_a.join
+
+arr3 = [1,2,3,4,2,6,5,6]
+arr4 = [2,4,3,1,3,7]
+
+p arr3 + arr4
+p arr3 - arr4 #[6,5,6]
+p arr3 & arr4 # duplicates removed
+p arr3 | arr4 # duplicates removed

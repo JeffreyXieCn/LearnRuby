@@ -14,3 +14,15 @@ longest = %w{ cat sheep bear }.inject do |memo, word|
   memo.length > word.length ? memo : word
 end
 p longest                                        #=> "sheep"
+
+
+r = 'a'..'z'
+p r.to_a
+oddLetter = []
+r.step(2){|l| oddLetter << l}
+p oddLetter
+p r.step(2).to_a
+
+triples = "AAA".."ZZZ"
+p triples.include? "ABCD"
+p triples.cover? "ABCD"

@@ -57,3 +57,21 @@ money = "\u{20AC A3 A5}" # => "€£¥"
 puts "money ", money
 
 #Encoding.list.each {|enc| p enc}
+#
+name = :size
+if money.respond_to? name
+  p money.send(name)
+end
+
+
+str1 = "hello"
+str2 = "hello"
+p str1.object_id
+p str2.object_id
+sym1 = str1.intern
+sym2 = str2.to_sym
+p sym1.object_id
+p sym2.__id__
+
+p str1.instance_of? String
+p str1.class == String
