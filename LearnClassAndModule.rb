@@ -67,6 +67,11 @@ p x.kind_of? Object
 
 class Point
   include Comparable
+  
+  @class_instance_var = 7
+  class << self
+    attr_accessor :class_instance_var
+  end
 
   # Initialize our class variables in the class definition itself
   @@n = 0 # How many points have been created
@@ -203,4 +208,33 @@ Point.report
 p Point.n
 p Point.totalX
 p Point.totalY
-pt1.protected_fun #protected method `protected_fun' called for #<Point:0x4ede810 @y=4, @x=3> (NoMethodError)
+#pt1.protected_fun #protected method `protected_fun' called for #<Point:0x4ede810 @y=4, @x=3> (NoMethodError)
+
+class Point3D < Point
+  @class3d_instance_var = 13
+  class << self
+    attr_accessor :class3d_instance_var
+  end
+  
+  def initialize(x,y,z)
+    # Pass our first two arguments along to the superclass initialize method
+    super(x,y)
+    # And deal with the third argument ourself
+    @z = z;
+  end
+  
+  ORIGIN = Point3D.new(0,0,0)
+  
+  def to_s
+    "(#@x, #@y, #@z)" # Variables @x and @y inherited? No
+  end
+  
+end
+
+p Point::ORIGIN
+p Point3D::ORIGIN
+p Point.class_instance_var
+Point.class_instance_var = 9
+p Point.class_instance_var
+p Point3D.class_instance_var #nil class instance variable is not inheritted
+p Point3D.class3d_instance_var
