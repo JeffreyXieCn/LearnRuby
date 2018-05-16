@@ -1,3 +1,5 @@
+require 'singleton'
+
 class ABC
   def xyz
     puts "xyz in ABC"
@@ -65,6 +67,27 @@ p x.is_a? Numeric
 p x.kind_of? Comparable
 p x.kind_of? Object
 
+
+class PointStats      # Define a class
+  include Singleton   # Make it a singleton
+  
+  def initialize
+    @n, @totalX, @totalY = 0, 0.0, 0.0
+  end
+  
+  def record(point)   # Record a new point
+    @n += 1
+    @totalX += point.x
+    @totalY += point.y
+  end
+  
+  def report          # Report point statistics
+    puts "Number of points created: #@n"
+    puts "Average X coordinate: #{@totalX.to_f/@n}"
+    puts "Average Y coordinate: #{@totalY.to_f/@n}"
+  end
+end
+
 class Point
   include Comparable
   
@@ -85,6 +108,7 @@ class Point
     @@n += 1 # Keep track of how many Points have been created
     @@totalX += x # Add these coordinates to the totals
     @@totalY += y
+    PointStats.instance.record(self)
   end
 
   ORIGIN = Point.new(0, 0)
@@ -204,7 +228,10 @@ p pt1 < pt2
 p pt1 == pt5
 
 p Point.sum(pt1, pt2, pt5)
+#p Point.new(0,0).sum(pt1, pt2, pt5) #undefined method `sum' for #<Point:0x00000000d06790 @y=0, @x=0> (NoMethodError)
+
 Point.report
+PointStats.instance.report
 p Point.n
 p Point.totalX
 p Point.totalY
